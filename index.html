@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .play-g {
+            background-size: cover;
+            background-image: url(Cover-1.jpg);
+            background-repeat: no-repeat;
+        }
+
+
+
+        img {
+            margin-top: 50px;
+        }
+
+        p {
+            color: white;
+            font-style: italic;
+        }
+
+        .ball {
+            width: 40px;
+            height: 40px;
+            padding: 5px;
+            background-color: red;
+            border-radius: 25px;
+            position: relative;
+            left: 350px;
+            transition: transform 1s ease-in-out 0.2s;
+        }
+
+        .field:hover .ball {
+            transform: translate(860px, -200px);
+        }
+
+        .field {
+            margin-top: 170px;
+        }
+
+        .bar {
+            transition: transform 0.2s ease-in;
+        }
+
+        .field:hover .bar {
+            transform: rotate(-60deg);
+            transform-origin: top right;
+        }
+    </style>
+</head>
+
+
+<body class="play-g">
+
+    <div class="field">
+
+        <img class="bar" src="bat1.png" alt="">
+        <div class="ball">
+            <p>Raich</p>
+        </div>
+    </div>
+
+</body>
+
+</html>
